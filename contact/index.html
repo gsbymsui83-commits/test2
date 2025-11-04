@@ -1,4 +1,83 @@
-<a href="/test2/about">about</a>
-<a href="/test2/contact">contact</a>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>강사 소개 — 제주 AI ON 협동조합</title>
+  <link rel="stylesheet" href="../assets/styles.css">
+  <meta name="description" content="강사 및 운영진을 소개합니다.">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="../">
+        <div class="brand-mark"></div>
+        <span class="brand-name">제주 AI&nbsp;ON</span>
+      </a>
+      <nav class="nav-links">
+        <a href="../about/">소개</a>
+        <a href="../contact/">강사 소개</a>
+        <a class="btn primary" href="../#programs">프로그램</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
-<h1>Contact</h1>
+  <main>
+    <section class="section">
+      <div class="container">
+        <h1 class="reveal">강사 & 운영진</h1>
+        <p class="reveal" style="max-width:760px">분야별 실무 경험을 바탕으로 쉽고 정확하게 전달합니다. 필요 시 팀티칭으로 운영합니다.</p>
+        <div class="people">
+          <div class="person reveal">
+            <div class="avatar">MJ</div>
+            <div>
+              <h4>강명주</h4>
+              <p>디지털 리터러시 · 생성형 AI · 지역협업</p>
+            </div>
+          </div>
+          <div class="person reveal">
+            <div class="avatar">HS</div>
+            <div>
+              <h4>홍서준</h4>
+              <p>코딩·메이킹 · 교육콘텐츠</p>
+            </div>
+          </div>
+          <div class="person reveal">
+            <div class="avatar">SJ</div>
+            <div>
+              <h4>김수정</h4>
+              <p>미디어 제작 · 브랜드 스토리</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-sm reveal">
+          <div class="badge">문의</div>
+          <div class="feature">
+            <div class="pane">
+              <h2>교육·협업 제안</h2>
+              <p>이메일: hello@jeju-aion.example</p>
+              <p>Instagram: @jeju_aion</p>
+            </div>
+            <div class="pane">
+              <h2>진행 가능 분야</h2>
+              <p>디지털 기초, 생성형 AI·미디어 제작, 소상공인 디지털 전환, 코딩 입문 등</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> 제주 AI ON 협동조합</span>
+      <span><a href="../">홈</a> · <a href="../about/">소개</a></span>
+    </div>
+  </footer>
+
+  <script src="../assets/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>

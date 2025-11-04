@@ -1,4 +1,77 @@
-<a href="/test2/about">about</a>
-<a href="/test2/contact">contact</a>
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>제주 AI ON 협동조합 — Landing</title>
+  <link rel="stylesheet" href="./assets/styles.css">
+  <meta name="description" content="디지털 리터러시 & 생성형 AI 교육으로 지역의 변화를 만듭니다.">
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a class="brand" href="./">
+        <div class="brand-mark"></div>
+        <span class="brand-name">제주 AI&nbsp;ON</span>
+      </a>
+      <nav class="nav-links">
+        <a href="./about/">소개</a>
+        <a href="./contact/">강사 소개</a>
+        <a class="btn primary" href="#programs">프로그램</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Menu">☰</button>
+    </div>
+  </header>
 
-<h1>내 생애 첫 홈페이지</h1>
+  <main>
+    <section class="hero section">
+      <div class="container">
+        <h1 class="reveal">디지털 변화 속 모두를 위한<br>간결하고 믿음직한 배움</h1>
+        <p class="reveal">중장년·경단녀·어르신을 위한 디지털 리터러시, 생성형 AI·미디어 제작, 소상공인 디지털 전환까지.<br>제주에서 시작해 지역과 삶을 연결합니다.</p>
+        <div class="cta reveal">
+          <a class="btn primary" href="./about/">우리는 무엇을 하나요</a>
+          <a class="btn ghost" href="./contact/">강사 만나보기</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="programs" class="section">
+      <div class="container">
+        <div class="badge reveal">핵심 프로그램</div>
+        <div class="card-grid">
+          <article class="card reveal">
+            <h3>디지털 첫걸음</h3>
+            <p>스마트폰·키오스크·생활 앱 기본기. 두려움 대신 자신감부터.</p>
+          </article>
+          <article class="card reveal">
+            <h3>생성형 AI 미디어</h3>
+            <p>이미지·영상·음성까지, 실습 중심으로 나만의 결과물을 완성.</p>
+          </article>
+          <article class="card reveal">
+            <h3>소상공인 디지털 지원</h3>
+            <p>온라인 홍보·간편 상점·콘텐츠 제작으로 매출과 시간을 절약.</p>
+          </article>
+        </div>
+
+        <div class="feature reveal">
+          <div class="pane">
+            <h2>지역과 함께 성장하는 교육 운영</h2>
+            <p>제주여성인력개발센터, 도서관, 문화공간과 협력하여 실용적인 커리큘럼을 설계하고 운영합니다.</p>
+          </div>
+          <div class="pane preview"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>© <span id="year"></span> 제주 AI ON 협동조합</span>
+      <span><a href="./about/">협동조합 소개</a> · <a href="./contact/">강사 소개</a></span>
+    </div>
+  </footer>
+
+  <script src="./assets/script.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear()</script>
+</body>
+</html>
